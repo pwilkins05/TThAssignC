@@ -183,7 +183,7 @@ int main()
 void printRoll(int n1, int n2, int n3, int n4, int n5)
 {
     cout << endl;
-    cout << "Your roll is:" << endl;
+    cout << "Your roll is: " << endl;
     cout << n1 << " " << n2 << " " << n3 << " " << n4 << " " << n5 << endl;
     cout << endl;
 }
