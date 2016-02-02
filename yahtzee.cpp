@@ -51,7 +51,7 @@ int main()
     int ones, twos, threes, fours, fives, sixes;
 
     //int onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore;
-
+    int score[6];
     int threeOfAKind;
     int fourOfAKind;
     int fullHouse;
@@ -60,7 +60,10 @@ int main()
     int yahtzee;
     int chance;
 
-    onesScore = twosScore = threesScore = foursScore = fivesScore = sixesScore = EMPTY;
+    for(int i = 0; i < 6; i++)
+    {
+        score[i] = EMPTY;
+    }
     threeOfAKind = fourOfAKind = fullHouse = smallStraight = largeStraight = yahtzee = chance = EMPTY;
 
     cout << "Welcome to Yahtzee!" << endl;
@@ -120,8 +123,7 @@ int main()
         fives = tabulateDice(5, die1, die2, die3, die4, die5);
         sixes = tabulateDice(6, die1, die2, die3, die4, die5);
 
-        int scoreOption = getScoreOption(onesScore, twosScore, threesScore, foursScore,
-                                         fivesScore, sixesScore, threeOfAKind,
+        int scoreOption = getScoreOption(score[0], score[1], score[2], score[3], score[4], score[5],  threeOfAKind,
                                          fourOfAKind, fullHouse, smallStraight,
                                          largeStraight, yahtzee, chance);
 
@@ -168,7 +170,7 @@ int main()
                 break;
         }*/
 
-        printScore(onesScore, twosScore, threesScore, foursScore, fivesScore, sixesScore,
+        printScore(score[0], score[1], score[2], score[3], score[4], score[5],
                    threeOfAKind, fourOfAKind, fullHouse, smallStraight, largeStraight, yahtzee, chance);
     }
 }
