@@ -1,0 +1,3 @@
+Program compiles and runs without major errors.
+
+Added a +1 to the dice roller so the result is 1-6 rather than 0-5
