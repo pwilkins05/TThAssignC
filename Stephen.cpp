@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Program wont run. Helpppp!!!!
+//It runs!!!
 int main()
 {
 
@@ -10,13 +10,14 @@ int main()
     int i = 0;
 
     while(i < 1000)
-    (
+    {
         cout << "Looping";
         i++;
-    )
-    int arraything[5] = {1,1,2,3,4,5};
+    }
 
-    for(int i = 0, i < 5; i++)
+    int arraything[6] = {1,1,2,3,4,5};
+
+    for(int i = 0; i < 6; i++)
     {
         cout << arraything[i];
     }
